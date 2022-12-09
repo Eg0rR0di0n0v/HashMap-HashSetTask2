@@ -1,0 +1,21 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main {
+    public static void main(String[] args) {
+        String text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus iaculis urna id volutpat lacus. Enim lobortis scelerisque fermentum dui. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Ut tristique et egestas quis ipsum suspendisse. Orci sagittis eu volutpat odio. Egestas quis ipsum suspendisse ultrices gravida dictum. Tristique senectus et netus et malesuada fames ac. Malesuada fames ac turpis egestas sed tempus urna et pharetra. Augue lacus viverra vitae congue eu consequat ac felis donec. Dui nunc mattis enim ut tellus elementum sagittis. Viverra nibh cras pulvinar mattis. Nibh cras pulvinar mattis nunc sed blandit libero volutpat sed. Eu nisl nunc mi ipsum faucibus vitae aliquet.\n" +
+                "\n" +
+                "Fusce ut placerat orci nulla pellentesque dignissim enim sit. Eget gravida cum sociis natoque. In egestas erat imperdiet sed euismod nisi porta lorem. Nunc sed velit dignissim sodales ut eu sem integer vitae. Adipiscing elit ut aliquam purus. Iaculis nunc sed augue lacus viverra. Pretium quam vulputate dignissim suspendisse in. Tellus cras adipiscing enim eu. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Lacinia at quis risus sed vulputate odio ut enim. At lectus urna duis convallis convallis tellus id interdum velit. Congue eu consequat ac felis. Laoreet sit amet cursus sit amet dictum sit amet. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus. Sed felis eget velit aliquet sagittis id consectetur purus ut.\n" +
+                "\n" +
+                "Neque vitae tempus quam pellentesque. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Leo in vitae turpis massa. Feugiat sed lectus vestibulum mattis ullamcorper velit. Aliquam eleifend mi in nulla. Tellus in hac habitasse platea dictumst vestibulum rhoncus est. Lectus proin nibh nisl condimentum id venenatis. Ut placerat orci nulla pellentesque dignissim enim sit amet venenatis. Viverra accumsan in nisl nisi scelerisque eu ultrices. Convallis a cras semper auctor neque vitae tempus quam. Elit ut aliquam purus sit amet luctus venenatis lectus. Tempus iaculis urna id volutpat. Feugiat in ante metus dictum at tempor commodo ullamcorper.\n" +
+                "\n" +
+                "Fames ac turpis egestas maecenas pharetra convallis. Posuere ac ut consequat semper viverra. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. A erat nam at lectus urna. Est sit amet facilisis magna etiam tempor orci eu. Mattis ullamcorper velit sed ullamcorper. Facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum. Blandit turpis cursus in hac habitasse. Nunc id cursus metus aliquam eleifend mi in. Sed viverra tellus in hac habitasse platea dictumst. Egestas sed sed risus pretium quam vulputate dignissim. Aenean sed adipiscing diam donec adipiscing tristique. Tempus imperdiet nulla malesuada pellentesque.\n" +
+                "\n" +
+                "Eget nulla facilisi etiam dignissim. Vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Pharetra vel turpis nunc eget lorem dolor sed viverra ipsum. Enim eu turpis egestas pretium aenean pharetra magna. Nibh ipsum consequat nisl vel pretium lectus quam id. Blandit aliquam etiam erat velit scelerisque in. Mattis enim ut tellus elementum sagittis vitae et. Nulla porttitor massa id neque aliquam vestibulum morbi blandit. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Vitae elementum curabitur vitae nunc. Libero enim sed faucibus turpis in eu. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Pulvinar etiam non quam lacus suspendisse faucibus interdum. Nisl purus in mollis nunc sed id semper. Senectus et netus et malesuada fames ac turpis egestas. Diam maecenas ultricies mi eget mauris pharetra et. Quis enim lobortis scelerisque fermentum. Egestas maecenas pharetra convallis posuere morbi leo.";
+        WordsChecker check = new WordsChecker(text);
+        check.textToMap();
+        check.getShow();
+        System.out.println(check.search("sit"));
+
+    }
+}

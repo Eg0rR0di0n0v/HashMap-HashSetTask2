@@ -2,26 +2,24 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class WordsChecker {
-    private String text;
-    private Map<String, Integer> map = new HashMap<String, Integer>();
-    private Integer i = 0;
-    private final Integer initMap = 1;
+    private final String text;
+    private final Map<String, Integer> map = new HashMap<>();
 
     public WordsChecker(String text){
         this.text = text;
     }
 
-    public boolean textToMap(){
+    public void textToMap(){
         for (String word : text.split("\\P{IsAlphabetic}+")) {
 
             if (map.containsKey(word)) {
-                i = map.get(word) + 1;
+                Integer i = map.get(word) + 1;
                 map.put(word, i);
             } else {
+                Integer initMap = 1;
                 map.put(word, initMap);
             }
         }
-        return true;
     }
 
     public void getShow(){
